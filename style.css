@@ -1,0 +1,42 @@
+/* Default types */
+html{
+    /* font-family: ; */
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: black;
+    color: whitesmoke;
+    height: 100%;
+    /* width: 100%; */
+}
+
+/* By ID */
+#vid-area{
+    height: 100%;
+    width: 100%;
+}
+#movie{
+    background-color: black;
+    max-width: 100%;
+}
+#text-area{
+    background-color: black;
+}
+#text-content{
+    font-size: 64px;
+    font-weight: 700;
+    transition: opacity 3s linear 3s;
+}
+
+
+/* By Class */
+
+
+
+
+/* Animations */
+.fade{
+    opacity: 0;
+}
