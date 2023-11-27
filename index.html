@@ -5,17 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movie</title>
     <link rel="stylesheet" type="text/css" href="./style.css" />
-    <link rel="icon" href="./assets/torch.png" />
+    <link rel="icon" href="./assets/icon.png" />
 </head>
 <body>
     
-    <div id="vid-area" onclick="window.setInterval(appendText,200)">
-        <video src="./assets/move.mp4" id="movie" autoplay></video>
+    <div id="vid-area">
+        <video id="movie" src="../30MFF/src/30MFF.mp4" controls></video>
     </div>
+
     <div id="text-area">
-        <span id="text-content">
-            
-        </span>
+        <span id="text-content"></span>
+    </div>
+
+    <div id="response-area" style="display: none;">
+        <span id="response-prompt">How are you feeling right now?</span>
+        <br><br>
+        <input type="text" id="response-field">
+        <button type="submit" id="response-submit">Submit</button>
+    </div>
+
+    <div id="contact-area" style="display: none;">  <!-- style="display: none;" -->
+        <div id="contact1" class="contacts">
+            <br>
+            Suicide Prevention Hotline
+            <br><br>
+            Phone number / email address
+        </div>
+        <div id="contact2" class="contacts">
+            <br>
+            Student Health Center
+            <br><br>
+            Phone number / email address
+        </div>
+        <div id="contact3" class="contacts">
+            <br>
+            NYUAD REACH
+            <br><br>
+            Phone number / email address
+        </div>
     </div>
 
     <script src="./script.js"></script>
