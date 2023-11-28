@@ -1,11 +1,9 @@
 /* Default types */
-html{
+body{
     font-family: CascadiaCode;
     text-align: center;
     padding: 0;
     margin: 0;
-}
-body{
     background-color: black;
     color: whitesmoke;
     height: 100%;
@@ -14,11 +12,16 @@ body{
 
 /* By ID */
 #vid-area{
+    position: fixed;
     height: 100%;
     width: 100%;
 }
 #movie{
-    max-height: 80vh;
+    /* display: none; */
+    /* max-height: 80vh; */
+    height: 100%;
+    width: 100%;
+    transition: opacity 2s linear;
 }
 #text-area{
     position: absolute;
@@ -28,6 +31,11 @@ body{
 #text-content{
     font-size: 64px;
     font-weight: 700;
+    transition: opacity 2s linear 1s;
+}
+#begin{
+    display: none;
+    font-size: 32px;
     transition: opacity 2s linear 1s;
 }
 #response-area{
