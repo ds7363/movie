@@ -62,6 +62,7 @@ body{
     top: 40%;
     height: 200px;
     width: 20%;
+    overflow-wrap: break-word;
 }
 
 
