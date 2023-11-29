@@ -29,7 +29,7 @@ respSubmit.addEventListener("click", inputPopout);
 
 // // Function definitions
 function appendText() {
-    if (i < 11) {
+    if (i < 13) {
         screenText.textContent += fullText[i];
         i++;
     }
