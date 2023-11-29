@@ -30,7 +30,7 @@ body{
 }
 #text-content{
     font-size: 64px;
-    font-weight: 700;
+    font-weight: 500;
     transition: opacity 2s linear 1s;
 }
 #begin{
