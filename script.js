@@ -1,5 +1,5 @@
 console.log("check");
-let fullText = "Are you okay?";
+let fullText = "Are you ok?";
 let i = 0;
 
 
@@ -29,7 +29,7 @@ respSubmit.addEventListener("click", inputPopout);
 
 // // Function definitions
 function appendText() {
-    if (i < 15) {
+    if (i < 11) {
         screenText.textContent += fullText[i];
         i++;
     }
