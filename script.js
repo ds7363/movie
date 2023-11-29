@@ -1,5 +1,5 @@
 console.log("check");
-let fullText = "Are you okay?";
+let fullText = "Are you ok?";
 let i = 0;
 
 
