@@ -27,4 +27,4 @@ Join us on this emotional and enlightening exploration of the human spirit as we
 
 Special thanks to *David, Catalin, Thomas, and Matthias Kebede* for their valuable support throughout the entire process. They actively participated in filming and contributed to the coding and development of the project.
 
-Feel free to explore our journey in raising awareness about men's mental health. Together, let's make a difference.\
+Feel free to explore our journey in raising awareness about men's mental health. Together, let's make a difference!
