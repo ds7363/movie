@@ -47,6 +47,7 @@ function appendText() {
 function playMovie() {
     document.body.removeEventListener("click", function() {screenText.classList.add("fade");beginText.classList.add("fade");window.setTimeout(playMovie, 4000);});
     if (movie.style.display != "none") {
+        movie.controls = false;
         movie.play();
     }
 }
