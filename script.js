@@ -50,6 +50,11 @@ function playMovie() {
         movie.play();
     }
 }
+
+movie.addEventListener("play", function () {
+    movie.controls = false;
+});
+
 function inputPopup() {
     movie.classList.add("fade");
     window.setTimeout(function() {
@@ -63,3 +68,5 @@ function inputPopout() {
     respArea.style.display = "none";
     window.setTimeout(function() {contactArea.style.display = "block"}, 1000)
 }
+
+
