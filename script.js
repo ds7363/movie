@@ -29,27 +29,63 @@ respSubmit.addEventListener("click", inputPopout);
 
 // // Function definitions
 function appendText() {
+<<<<<<< HEAD
     if (i < 11) {
-        screenText.textContent += fullText[i];
-        i++;
+      screenText.textContent += fullText[i];
+      i++;
+    } else {
+      document.body.removeEventListener("click", function () {
+        window.setInterval(appendText, 200);
+      });
+      window.clearInterval();
+      document.body.addEventListener("click", function () {
+        screenText.classList.add("fade");
+        beginText.classList.add("fade");
+        window.setTimeout(playMovie, 4000);
+      });
+      window.setTimeout(function () {
+        beginText.style.display = "block";
+      }, 1000);
+  
+      // Show movie controls after text fades away
+      window.setTimeout(function () {
+        movie.controls = true;
+      }, 5000); // Adjust the timing as needed
     }
-    else {
-        document.body.removeEventListener("click", function() {window.setInterval(appendText,200)});
-        window.clearInterval();
-        document.body.addEventListener("click", function() {
-            screenText.classList.add("fade");
-            beginText.classList.add("fade");
-            window.setTimeout(playMovie, 4000);
-        });
-        window.setTimeout(function () {beginText.style.display = "block"}, 1000);
-    }
+  }
+=======
+  if (i < 11) {
+    screenText.textContent += fullText[i];
+    i++;
+  } else {
+    document.body.removeEventListener("click", function () {
+      window.setInterval(appendText, 200);
+    });
+    window.clearInterval();
+    document.body.addEventListener("click", function () {
+      screenText.classList.add("fade");
+      beginText.classList.add("fade");
+      window.setTimeout(playMovie, 4000);
+    });
+    window.setTimeout(function () {
+      beginText.style.display = "block";
+    }, 1000);
+
+    // Show movie controls after text fades away
+    window.setTimeout(function () {
+      movie.controls = true;
+    }, 5000); // Adjust the timing as needed
+  }
 }
+>>>>>>> 51837851322b976b7fcd9b1aecfca23a80365670
 function playMovie() {
     document.body.removeEventListener("click", function() {screenText.classList.add("fade");beginText.classList.add("fade");window.setTimeout(playMovie, 4000);});
     if (movie.style.display != "none") {
         movie.play();
     }
 }
+
+
 function inputPopup() {
     movie.classList.add("fade");
     window.setTimeout(function() {
@@ -63,3 +99,5 @@ function inputPopout() {
     respArea.style.display = "none";
     window.setTimeout(function() {contactArea.style.display = "block"}, 1000)
 }
+
+
