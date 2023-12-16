@@ -29,20 +29,28 @@ respSubmit.addEventListener("click", inputPopout);
 
 // // Function definitions
 function appendText() {
-    if (i < 11) {
-        screenText.textContent += fullText[i];
-        i++;
-    }
-    else {
-        document.body.removeEventListener("click", function() {window.setInterval(appendText,200)});
-        window.clearInterval();
-        document.body.addEventListener("click", function() {
-            screenText.classList.add("fade");
-            beginText.classList.add("fade");
-            window.setTimeout(playMovie, 4000);
-        });
-        window.setTimeout(function () {beginText.style.display = "block"}, 1000);
-    }
+  if (i < 11) {
+    screenText.textContent += fullText[i];
+    i++;
+  } else {
+    document.body.removeEventListener("click", function () {
+      window.setInterval(appendText, 200);
+    });
+    window.clearInterval();
+    document.body.addEventListener("click", function () {
+      screenText.classList.add("fade");
+      beginText.classList.add("fade");
+      window.setTimeout(playMovie, 4000);
+    });
+    window.setTimeout(function () {
+      beginText.style.display = "block";
+    }, 1000);
+
+    // Show movie controls after text fades away
+    window.setTimeout(function () {
+      movie.controls = true;
+    }, 5000); // Adjust the timing as needed
+  }
 }
 function playMovie() {
     document.body.removeEventListener("click", function() {screenText.classList.add("fade");beginText.classList.add("fade");window.setTimeout(playMovie, 4000);});
